@@ -925,6 +925,11 @@ section .main2 div p{
   z-index: 102;
 
 }
+/* @media(max-width: 425px){
+  h1.church{
+    margin-top: 25px;
+  }
+} */
 
 
 
@@ -991,6 +996,14 @@ section .main2 div p{
   
 
 }
+
+@media(max-width: 425px) {
+  .forgive .main3 button.repent{
+    width: 60%;
+  }
+}
+
+
 .forgive .main3 button.repent a{
   color: #00141d;
 }
@@ -1038,6 +1051,11 @@ section .main2 div p{
   transition-property: box-shadow, color, background, outline;
 
 }
+/* @media(max-width: 425px) {
+  .forgive .flex-contain-center button.amen{
+    width: 30%;
+  }
+} */
 .forgive .flex-contain-center button.amen:hover{
   box-shadow: 5px 8px 13px rgba(0, 0, 0, 0.4),
               -0 -5px 13px rgba(0, 0, 0, 0);
@@ -1752,10 +1770,12 @@ div.map iframe{
     padding: 7px 15px;
    }
    header .livestream{
-    right: 80px;
+    right: 50px;
     font-size: 10px;
     padding: 9px 15px;
     position: absolute;
+    margin: 0 10px;
+
    }
    .home{
     width: 100%;
@@ -1887,6 +1907,10 @@ div.map iframe{
     .home .content{
       width: 70%;
     }
+    .home .content h1{
+    font-size: 40px;
+    line-height: 40px;
+    }
     .home .content a{
       padding: 5px 20px;
       font-size: 15px;
@@ -1895,17 +1919,6 @@ div.map iframe{
       z-index: 999;
       display: none;
       position: fixed;
-      top: 70px;
-      right: 20px;
-      flex-direction: column;
-      align-items: center;
-      height: 50%;
-      width: 50px;
-    }
-    .home div.media-icon a i{
-      margin-bottom: 20px;
-      color: #00b3ff;
-      text-align: center;
     }
     .main{
       flex-direction: column;
@@ -1972,34 +1985,35 @@ div.map iframe{
       top: 0;
       position: absolute;
     }
-    .main2{
+    .bp2 .main2{
       background: #1313138a;
       width: 100%;
+      height: 400px;
       left: 50%;
       right: 50%;
-    }
-     .main2 div{
-    
-      width: 100%;
       display: flex;
-      height: auto;
-      position: relative;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
     }
-    .bp2 .main2 div h1.church{
-      top: 0;
-      position: absolute;
+     
+    .bp2 .main2  h1.church{
+      color: #ff0000;
       width: 80%;
-      margin-top: 60px;
+      line-height: 30px;
+      font-size: 30px;
+      font-weight:800;
+
       
     }
-    .bp2 .main2 div h1 span.nam{
+    .bp2 .main2  h1 span.nam{
       color: #ffffff;
     }
-    .main2 div p{
-      position: absolute;
-      bottom: 70px;
+    .main2  p{
       font-weight: 500;
       color: #fff;
+      margin-top: 20px;
     }
     .bp4{
       width: 100%;
