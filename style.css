@@ -1766,8 +1766,8 @@ div.map iframe{
     }
    header .giving{
     right: 200px;
-    font-size: 10px;
-    padding: 7px 15px;
+    font-size: 15px;
+    padding: 5px 12px;
    }
    header .livestream{
     right: 60px;
@@ -1891,11 +1891,27 @@ div.map iframe{
   @media(max-width: 425px){
     header{
       width: 100%;
-      max-width: 425px;
     }
     section{
       width: 100%;
       padding: 0;
+    }
+    header .livestream{
+      background: #fa0101b4;
+      text-align: center;
+      position: absolute;
+      border-radius: 7px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .livestream:hover{
+      background: #fa010100;
+      border: 2px solid white;
+      transition: all 0.4s ease;
+    }
+    .livestream:active{
+      background: #ff00005a;
     }
     .home{
       padding: 150px 20px;
@@ -1919,7 +1935,7 @@ div.map iframe{
     .home div.media-icon{
       z-index: 999;
       display: none;
-      position: fixed;
+ 
     }
     .main{
       flex-direction: column;
