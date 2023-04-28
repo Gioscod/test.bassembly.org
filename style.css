@@ -1888,7 +1888,7 @@ div.map iframe{
       padding: 5px 20px;
       font-size: 15px;
     }
-    .home div.media-icon{
+    /* .home div.media-icon{
       z-index: 999;
       display: flex;
       position: fixed;
@@ -1903,7 +1903,7 @@ div.map iframe{
       margin-bottom: 20px;
       color: #00b3ff;
       text-align: center;
-    }
+    } */
     .main{
       flex-direction: column;
       position: relative;
