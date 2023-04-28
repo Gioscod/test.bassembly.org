@@ -1891,7 +1891,7 @@ div.map iframe{
   @media(max-width: 425px){
     header{
       width: 100%;
-      max-width: 435px;
+      max-width: 425px;
     }
     section{
       width: 100%;
