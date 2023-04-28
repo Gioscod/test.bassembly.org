@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <link rel="shortcut icon" type="image/png" href="favicon.png" >
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <button class="giving" onclick="openForm()">Give Online</button>
+
+    <div class="form-popup" id="myForm">
+        <form  class="form-cont">
+          <h1>GIVE HERE</h1>
+          
+          <button class="btn-0pen"><a href="https://paystack.com/pay/9hzditrl-5">Offering &amp; Seeding </a></button>
+          <button class="btn-0pen"><a href="https://paystack.com/pay/9hzditrl-5">Tithers</a></button>
+          <button class="btn-0pen"><a href="https://paystack.com/pay/9hzditrl-5">Partnership us</a></button>
+          <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
+      <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
+
+
+    <button class="livestream"> <a href="live.html">LIVESTREAM</a></button>
+    <a href="index.html"><img class="logo" src="logo.png"></a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+        <div class="navigation-item">
+            <a href="index.html">Home</a>
+            <a href="News.html">News</a>
+            <a href="Service.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </div>
+</header>
+<section>
+  <div class="pag1">
+    <div class="news-page">
+        <h1>Gallery</h1>
+        <div class="media-icon">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+  </div>
+<div class="dontcu">
+  <div class="body">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="sunday img/44.jpg" /><h1>Covenant sunday</h1></div>
+        <div class="swiper-slide"><img src="sunday img/45.jpg" /><h1>Covenant sunday</h1></div>
+        <div class="swiper-slide"><img src="sunday img/46.jpg" /><h1>Covenant sunday</h1></div>
+        <div class="swiper-slide"><img src="sunday img/47.jpg" /><h1>Covenant sunday</h1></div>
+        <div class="swiper-slide"><img src="sunday img/48.jpg" /><h1>Covenant sunday</h1></div>
+        <div class="swiper-slide"><img src="sunday img/60.jpg" /><h1>Covenant sunday</h1></div>
+        <div class="swiper-slide"><img src="sunday img/61.jpg" /><h1>Covenant sunday</h1></div>
+        <div class="swiper-slide"><img src="sunday img/62.jpg" /><h1>Covenant sunday</h1></div>
+        
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    
+  </div>
+  
+</div>
+</section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+      loop: true,
+      
+    });
+  </script>
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/64375f4731ebfa0fe7f7fe8a/1gufi124d';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+        
+        <script type="text/javascript">
+            //Javascript of responsive menu
+            const menuBtn = document.querySelector(".menu-btn");
+            const navigation = document.querySelector(".navigation");
+
+            menuBtn.addEventListener("click", () => {
+              menuBtn.classList.toggle("active");
+              navigation.classList.toggle("active");
+            });
+
+            //Javascript for video slider navigation
+            const btns = document.querySelectorAll(".sliders");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+
+            var slidernav = function(manual){
+                btns.forEach((btn) => {
+                    btn.classList.remove("active");
+                });
+
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                });
+
+                contents.forEach((content) => {
+                    content.classList.remove("active");
+                });
+
+                btns[manual].classList.add("active");
+                slides[manual].classList.add("active");
+                contents[manual].classList.add("active");
+            }
+
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    slidernav(i);
+                });
+            });
+            
+        </script>
+  
+
+</body>
+</html>
