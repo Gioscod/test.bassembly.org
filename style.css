@@ -1891,10 +1891,15 @@ div.map iframe{
   @media(max-width: 425px){
     header{
       width: 100%;
+      padding: 0 10px;
     }
     section{
       width: 100%;
       padding: 0;
+    }
+    div.menu-btn {
+      margin-right: 20px;
+      font-size: 50px;
     }
     header .livestream{
       background: #fa0101b4;
@@ -1904,6 +1909,7 @@ div.map iframe{
       border: none;
       cursor: pointer;
       transition: 0.3s ease;
+      right: 80px;
     }
     .livestream:hover{
       background: #fa010100;
@@ -1912,6 +1918,9 @@ div.map iframe{
     }
     .livestream:active{
       background: #ff00005a;
+    }
+    button.giving{
+      right: 220px;
     }
     .home{
       padding: 150px 20px;
