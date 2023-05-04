@@ -272,6 +272,7 @@
     }
   section{
     padding: 0;
+    margin: 0;
     height: 100%;
     width: 100%;
   }
@@ -874,54 +875,53 @@ div#embedvidio-widget-98ff0d18-980d-4f87-8933-21cd315c15a4  div{
     display: flex;
     justify-content: center;
     padding: 20px 0;
-    padding: 0;
+    
     flex-direction: column;
     align-items: center;
     position: relative;
-    background-image: url(beulahland.png);
+    background-image: url(img/first.jpg);
+    background-blend-mode: soft-light;
     background-size: cover;
     align-items: center;
   }
   .main2{
     width: 80%;
-    height: auto;
     padding: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
     
   }
-.bp2 .main2 div{
+.bp2 .main2{
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 100%;
   text-align: center;
   align-items: center;
   
 }
- .bp2 .main2 div h1{
+ .bp2 .main2 h1.church{
   font-size: 30px;
   letter-spacing: -3px;
   line-height: 23px;
   color: #fa0101;
   font-weight: 400;
   width: 45%;
-  height: 40px;
+  height: 32%;
   
-  
-  z-index: 100;
 }
-.bp2 .main2 div h1 span.nam{
+.bp2 .main2 h1 span.nam{
   font-weight: bold;
   color: #00141d;
-  z-index: 101;
 }
-section .main2 div p{
+section .main2 p{
   width: 60%;
   margin-top: 20px;
-  
+
   z-index: 102;
 
 }
@@ -1688,9 +1688,69 @@ div.map iframe{
 
 
 
+/* ======================================= */
+/* ==============success page============== */
+/* ======================================= */
 
+div.sof{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background: rgba(24, 0, 44, 0.542);
+}
+.pop{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) ;
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  transition: transform 0.4s, top 0.4s;
+}
 
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
 
+}
+
+.pop img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.pop h2{
+  padding: 10px 0;
+}
+.pop .button{
+  border: none;
+  width:  100px;
+  padding: 10px 20px;
+  background: green;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #fff;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  transition-property: box-shadow;
+}
+.pop .button:hover{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.678);
+  
+}
 
 
 
@@ -1882,7 +1942,7 @@ div.map iframe{
       .detail{
         text-align: center;
       }
-      input.sub{
+      .sub{
         align-items: center;
         width: 200px;
       }
@@ -2011,7 +2071,7 @@ div.map iframe{
       top: 0;
       position: absolute;
     }
-    .bp2 .main2{
+    /* .bp2 .main2{
       background: #1313138a;
       width: 100%;
       height: 400px;
@@ -2023,8 +2083,8 @@ div.map iframe{
       text-align: center;
       padding: 0 20px;
     }
-     
-    .bp2 .main2  h1.church{
+      */
+    /* .bp2 .main2  h1.church{
       color: #ff0000;
       width: 80%;
       line-height: 30px;
@@ -2040,7 +2100,8 @@ div.map iframe{
       font-weight: 500;
       color: #fff;
       margin-top: 20px;
-    }
+    } */
+
     .bp4{
       width: 100%;
       height: 100%;

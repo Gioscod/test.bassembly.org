@@ -117,14 +117,14 @@
         <div class="bp2">
             <div class="main2">
 
-                    <div>
+                    
                         <h1 class="church">WELCOME TO <br> <span class="nam">
                             BEULAH CHRISTIAN ASSEMBLY INT'L
                         </span></h1>
 
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis cupiditate necessitatibus vel odio vitae porro animi, nulla ratione natus. Reiciendis et, <br> numquam incidunt debitis voluptate quasi explicabo assumenda earum hic.</p>
                         
-                    </div>
+                    
                     </div>            
                                           
                     
@@ -226,7 +226,9 @@
 
                             <!-- Disable Capcha -->
                             <input type="hidden" name="_captcha" value="false">
-                          
+                            
+                            <input type="hidden" name="_next" value="https://gioscod.github.io/test.bassembly.org/success.html">
+
                             <div class="form-contain">
                               <input class="name" name="name" type="text" placeholder="First name"  required>
                               <input class="Email" name="Last Name" type="name" placeholder="Last&nbsp;Name"  required>
@@ -241,7 +243,18 @@
                               <input class="sub" type="submit">
                             </div>
                           </form>
-                          
+                          <!-- <div class="fulscreen hidden1 flex-contain-center">
+                            <h1>Subscribed</h1>
+                            <p>Thank you</p>
+                                <button class="amen" onclick="togglePopup()">Back</button>
+                        </div>
+                        <script type="text/javascript">
+                            const popup = document.querySelector('.fulscreen');
+                            console.log(popup);
+                            function togglePopup() {
+                                popup.classList.toggle('hidden1');
+                            }
+                           </script>  -->
                     
                 </div>
                 <br>
@@ -253,7 +266,7 @@
             (function () {
                 var options = {
                     whatsapp: "+2347038821007", // WhatsApp number
-                    call_to_action: "Message us", // Call to action
+                    call_to_action: "Let's Talk", // Call to action
                     position: "left", // Position may be 'right' or 'left'
                 };
                 var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
