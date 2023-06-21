@@ -1310,17 +1310,43 @@ form.form{
   padding: 20px;
   overflow: hidden;
   text-align: center;
+  
+  
+}
+@media (max-width: 700px) {
+  .recp{
+    flex-direction: column;
+    padding: 0;
+  }
+  .reci{
+    margin-bottom: 20px;
+  }
+  .recc{
+    margin-bottom: 30px;
+  }
+  
+  
 }
 .reci{
   font-weight: 400;
   font-style: italic;
   font-size: 35px 20px;
   color: #ffffff;
-  background: rgba(32, 32, 32, 0.144);
-  width: 50%;
+  background: rgba(100, 2, 2, 0.979);
+  width: 30%;
   padding: 30px;
+  text-transform: uppercase;
   border-radius: 5px;
-  box-shadow: 6px 5px 16px rgba(32, 32, 32, 0.473);
+  box-shadow: 6px 5px 9px rgba(32, 32, 32, 0.384);
+  display: flex;
+  flex-direction: row;
+}
+
+.recc{
+  text-align: left;
+  padding: 0 20px;
+  width: 60%;
+
 }
 
 
