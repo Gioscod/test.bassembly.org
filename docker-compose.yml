@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  gold:
+    image: gold
+    build:
+      context: .
+      dockerfile: ./Dockerfile
